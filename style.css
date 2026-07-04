@@ -1,0 +1,60 @@
+/* Step 3: body background color */
+body {
+  background-color: orangered;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Step 5: dark blue text color for all elements with class = head */
+.head {
+  color: darkblue;
+}
+
+/* Step 6: background color for the 2nd heading using id = bglime */
+#bglime {
+  background-color: lime;
+}
+
+/* Step 7: text color of "head" word inside 2nd heading -> red
+   (targets the span placed only inside the h2, no class/id on the span itself) */
+h2 span {
+  color: red;
+}
+
+/* Step 8: all p tags with no id/class get white text, styled using only the p selector */
+p {
+  color: white;
+}
+
+/* Step 9: 2nd paragraph (id = para) gets green text, overrides the p rule above */
+#para {
+  color: green;
+}
+
+/* Step 10: the word "paragraph" inside the 2nd plain paragraph -> black + bigger font
+   (targets the span inside a p, no id/class on the span) */
+p span {
+  color: black;
+  font-size: 1.4em;
+}
+
+/* Step 11: style the two "here" links without inline CSS or id/class on the <a> tags.
+   Using descendant + nth-child selectors instead. */
+ul li:nth-child(1) a {
+  background-color: yellow;
+  text-decoration: underline;
+}
+
+ul li:nth-child(2) a {
+  background-color: lightblue;
+  text-decoration: underline;
+}
+
+/* Step 11: style the ordered list items using nth-child, no id/class */
+ol li:nth-child(2) {
+  color: blue;
+}
+
+ol li:nth-child(3) {
+  color: red;
+}
